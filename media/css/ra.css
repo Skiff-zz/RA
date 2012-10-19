@@ -1,0 +1,14 @@
+body { position: relative; margin:0px; } 
+.mask { position:absolute; width:100%; height:100%; left:0px; top:0px; z-index:200; background-color:#FFF; opacity:0; display:none;}
+
+
+.filter-box { width:100%; height:300px; }
+
+.filter-box .f-item-outer { z-index:201; position: relative; width:200px; height:200px; top:-70px; left:-70px; -webkit-transition: 0.4s ease; border:#ffc800 20px solid; border-radius:100%; cursor: pointer; -webkit-box-sizing: border-box;}
+.filter-box .f-item-outer .f-item-inner { width:100%; height:100%; border:rgba(0,0,0,0) 80px solid; -webkit-transition: 0.4s ease; -webkit-box-sizing: border-box; border-radius:100%;}
+
+.filter-box .f-item-outer .title { position: absolute; bottom:80px; right:30px; width:auto; font-size:18px; -webkit-transition: 0.4s ease }
+
+.filter-box .f-item-outer:hover { border-width: 5px; }
+.filter-box .f-item-outer:hover .f-item-inner { border-width: 0; border-color: rgba(0, 0, 0, 0.5); }
+/*.filter-box .f-item-outer:hover .title { bottom:66px; right:16px; }*/
